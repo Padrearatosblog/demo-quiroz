@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiroz Cocina Navarra | Demo</title>
+  <meta name="description" content="Restaurante moderno en Pamplona con producto navarro y cocina de temporada. Reserva por WhatsApp." />
+
+  <!-- Open Graph (opcional, para compartir por WhatsApp/Instagram) -->
+  <meta property="og:title" content="Quiroz Cocina Navarra" />
+  <meta property="og:description" content="Cocina moderna con producto navarro · Reservas por WhatsApp" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+  <span class="logo" aria-hidden="true">
+    <!-- Icono minimal premium -->
+    <svg viewBox="0 0 64 64" role="img" aria-label="Logo Quiroz">
+      <defs>
+        <linearGradient id="qz" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="rgba(214,179,106,0.95)"/>
+          <stop offset="1" stop-color="rgba(214,179,106,0.35)"/>
+        </linearGradient>
+      </defs>
+
+      <circle cx="32" cy="32" r="27" fill="none" stroke="url(#qz)" stroke-width="2.2"/>
+      <path d="M32 18c7.7 0 14 6.3 14 14s-6.3 14-14 14-14-6.3-14-14 6.3-14 14-14Z"
+            fill="none" stroke="url(#qz)" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M41.5 41.5l5 5" fill="none" stroke="url(#qz)" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="32" cy="32" r="1.3" fill="rgba(214,179,106,0.9)"/>
+    </svg>
+  </span>
+
+  <!-- Texto marca -->
+  <span class="brand-text">
+    <span class="brand-name">QUIROZ</span>
+    <span class="brand-sub">COCINA NAVARRA · PAMPLONA</span>
+  </span>
+</a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#propuesta">Propuesta</a>
+        <a href="#menu">Carta</a>
+        <a href="#galeria">Galería</a>
+        <a href="#reseñas">Reseñas</a>
+        <a class="btn btn-accent" href="#contacto">Ubicación</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <section class="hero-card" aria-label="Presentación">
+        <div class="hero-media">
+          <span class="badge">Producto navarro · Temporada</span>
+        </div>
+
+        <div class="hero-content">
+          <p class="kicker">Cocina moderna con sabor de Navarra</p>
+          <h1 class="title">Quiroz<br><span>Cocina Navarra</span></h1>
+          <p class="subtitle">
+            Un restaurante moderno en Pamplona, con producto local y una carta viva según mercado.
+            Reserva fácil por WhatsApp, sin llamadas.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-whatsapp" id="btnWhatsAppHero" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+            <a class="btn" href="#menu">Ver carta</a>
+          </div>
+
+          <ul class="meta">
+            <li><span class="dot"></span>Ambiente cuidado</li>
+            <li><span class="dot"></span>Carta de temporada</li>
+            <li><span class="dot"></span>Menú del día</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TARJETA LATERAL -->
+      <aside class="side">
+        <div class="panel">
+          <h2 class="panel-title">Horarios (ejemplo)</h2>
+          <div class="kv">
+            <div><span>Mar–Dom</span><b>13:00–16:00</b></div>
+            <div><span>Vie–Sáb</span><b>20:00–23:00</b></div>
+            <div><span>Lunes</span><b>Cerrado</b></div>
+          </div>
+          <a class="btn btn-accent w100" href="#contacto">Cómo llegar</a>
+        </div>
+
+        <div class="panel">
+          <h2 class="panel-title">Platos destacados</h2>
+          <div class="mini-list">
+            <div class="mini">
+              <b>Chuletón a la brasa</b>
+              <p>Carne seleccionada · punto perfecto</p>
+            </div>
+            <div class="mini">
+              <b>Pulpo & crema suave</b>
+              <p>Textura y sabor · toque moderno</p>
+            </div>
+            <div class="mini">
+              <b>Postre de la casa</b>
+              <p>Casero · cambia por temporada</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- PROPUESTA -->
+  <section id="propuesta" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Una experiencia moderna, con raíces</h2>
+        <p>Producto navarro, cocina de temporada y un espacio moderno pensado para disfrutar.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Producto local</h3>
+          <p>Verduras, carnes y quesos de Navarra. Sabor real y proveedores de confianza.</p>
+        </article>
+        <article class="card">
+          <h3>Cocina de mercado</h3>
+          <p>Carta viva según temporada: menos platos, más calidad y coherencia.</p>
+        </article>
+        <article class="card">
+          <h3>Reserva fácil</h3>
+          <p>WhatsApp + ubicación clara. Menos fricción, más mesas llenas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Carta</h2>
+        <p>En la demo puedes enlazar un PDF. Luego, si el cliente quiere, se convierte a carta web.</p>
+      </div>
+
+      <div class="menu-box">
+        <div class="menu-left">
+          <h3>Menú del día</h3>
+          <ul>
+            <li><b>Entrante</b> · Verdura de temporada</li>
+            <li><b>Principal</b> · Carne / pescado del mercado</li>
+            <li><b>Postre</b> · Casero</li>
+          </ul>
+          <p class="muted">*Ejemplo demo. El contenido real se adapta al restaurante.</p>
+        </div>
+
+        <div class="menu-right">
+          <a class="btn btn-accent" href="menu.pdf" target="_blank" rel="noopener">Ver carta (PDF)</a>
+          <a class="btn btn-whatsapp" id="btnWhatsAppMenu" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          <p class="small">Respuesta rápida. Reservas y consultas sin llamadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Galería</h2>
+        <p>Fotos reales del local y platos. En demo usa las 4 imágenes que generamos.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="ph hero-ph">
+          <img src="img/hero.png" alt="Interior del restaurante Quiroz Cocina Navarra" loading="lazy">
+        </figure>
+
+        <figure class="ph">
+          <img src="img/plato-1.png" alt="Plato navarro moderno: carne a la brasa" loading="lazy">
+        </figure>
+
+        <figure class="ph">
+          <img src="img/plato-2.png" alt="Plato navarro moderno: pulpo" loading="lazy">
+        </figure>
+
+        <figure class="ph">
+          <img src="img/local.png" alt="Ambiente interior del restaurante" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section id="reseñas" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Reseñas</h2>
+        <p>Prueba social rápida. En la versión final se usan reseñas reales.</p>
+      </div>
+
+      <div class="reviews">
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Producto de calidad y trato excelente. Ambiente moderno y acogedor.”</p>
+          <small>— Cliente verificado</small>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Menú del día buenísimo. Se nota el cuidado en la cocina y en los detalles.”</p>
+          <small>— Reseña tipo Google</small>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Carta corta, pero todo estaba espectacular. Repetiremos.”</p>
+          <small>— Cliente local</small>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Ubicación y reservas</h2>
+        <p>Dirección clara + mapa + WhatsApp. Esto es lo que más convierte.</p>
+      </div>
+
+      <div class="contact">
+        <div class="map">
+          <iframe
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Pamplona&output=embed"
+            title="Mapa">
+          </iframe>
+        </div>
+
+        <div class="panel contact-panel">
+          <h3>Datos (ejemplo)</h3>
+
+          <div class="rows">
+            <div class="row"><span>Dirección</span><b>Calle Ejemplo 12, 31001 Pamplona</b></div>
+            <div class="row"><span>Horario</span><b>Mar–Dom 13:00–16:00 · Vie–Sáb 20:00–23:00</b></div>
+            <div class="row"><span>Teléfono</span><b>+34 618 905 239</b></div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-whatsapp" id="btnWhatsAppContact" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+            <a class="btn" href="tel:+34618905239">Llamar</a>
+          </div>
+
+          <p class="small muted">
+            * Demo conceptual. Contenido e imágenes pueden ser de ejemplo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp flotante -->
+  <a class="float-wa" id="btnWhatsAppFloat" target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">
+    <span class="wa-dot"></span> Reservar
+  </a>
+
+  <footer class="footer">
+    <div class="wrap foot">
+      <div>© Demo · Quiroz Cocina Navarra</div>
+      <div class="signature">Demo creada por BAQ Studio · Webs para hostelería en Pamplona</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
