@@ -20,3 +20,24 @@ if (btnHero) btnHero.href = waLink(messageReserve);
 if (btnContact) btnContact.href = waLink(messageReserve);
 if (btnFloat) btnFloat.href = waLink(messageReserve);
 if (btnMenu) btnMenu.href = waLink(messageInfo);
+
+// ================================
+// MENÚ MÓVIL (HAMBURGUESA)
+// ================================
+const navToggle = document.getElementById("navToggle");
+const siteNav = document.getElementById("siteNav");
+
+if (navToggle && siteNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  // Cerrar menú al hacer click en un enlace
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      siteNav.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
